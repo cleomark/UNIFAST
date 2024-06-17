@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LMS - Unifast Discount</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <img src="logo.png" alt="LMS Logo" />
+      </div>
+      <nav>
+        <ul>
+          <li>
+            <a href="#"><i class="fas fa-home"></i> Dashboard</a>
+          </li>
+          <li>
+            <a href="#"><i class="fas fa-book"></i> Courses</a>
+          </li>
+          <li>
+            <a href="#"><i class="fas fa-user"></i> Profile</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <div class="container">
+        <section class="student-info">
+          <h2>Student Information</h2>
+          <div class="info-card">
+            <div class="info-item">
+              <i class="fas fa-user"></i>
+              <span>John Doe</span>
+            </div>
+            <div class="info-item">
+              <i class="fas fa-id-card"></i>
+              <span>STU123456</span>
+            </div>
+            <div class="info-item">
+              <i class="fas fa-envelope"></i>
+              <span>john.doe@example.com</span>
+            </div>
+          </div>
+        </section>
+
+        <section class="course-info">
+          <h2>Enrolled Courses</h2>
+          <div class="course-card">
+            <h3>Course 1</h3>
+            <div class="course-details">
+              <div class="course-item">
+                <i class="fas fa-code"></i>
+                <span>COURSE101</span>
+              </div>
+              <div class="course-item">
+                <i class="fas fa-money-bill-wave"></i>
+                <span>$500</span>
+              </div>
+            </div>
+          </div>
+          <div class="course-card">
+            <h3>Course 2</h3>
+            <div class="course-details">
+              <div class="course-item">
+                <i class="fas fa-code"></i>
+                <span>COURSE102</span>
+              </div>
+              <div class="course-item">
+                <i class="fas fa-money-bill-wave"></i>
+                <span>$750</span>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="unifast-discount">
+          <h2>Unifast Discount</h2>
+          <form id="unifast-form">
+            <div class="form-group">
+              <label for="scholarship-type">Scholarship Type</label>
+              <select id="scholarship-type" required>
+                <option value="">Select Scholarship</option>
+                <option value="Academic Excellence">Academic Excellence</option>
+                <option value="Sports">Sports</option>
+                <option value="Arts">Arts</option>
+                <option value="Need-based">Need-based</option>
+              </select>
+            </div>
+            <button type="submit" class="btn-apply">Apply Discount</button>
+          </form>
+          <div id="discount-message"></div>
+        </section>
+      </div>
+    </main>
+
+    <footer>
+      <p>&copy; 2023 Learning Management System. All rights reserved.</p>
+    </footer>
+
+    <script src="app.js"></script>
+  </body>
+</html>
